@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+h4{
+    user-select: none; 
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#formp{
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width   :   350px;
+    height  :   300px;
+    background-color: #191919;
+    border-radius: 10px;
+}
+#formp input[type="text"],input[type="number"],input[type="submit"]{
+    margin: 9px ;
+    height: 35px;
+    width: 100%;
+}
+
+#formp input[type="text"],input[type="number"]{
+    
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #CDD9ED;
+    color: #6C7486;
+    
+    font-size: 18px;
+    text-align: center;
+}
+
+#formp input[type="submit"]{
+    background-color: #e84118;
+    color:#303030;
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 100;
+    color:#CDD9ED;
+}
+
+#formp input[type="text"]:focus-within{
+    border: #e78d76;
+    
+    border-style: solid;
+    border-width: 5px;
+}
+::placeholder { 
+  color: #3F4656;
+  opacity: 1;
+}
+
+
+.forml{
+    position: relative;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #141414;
+}
+#listprod{
+    position: relative;
+    padding: 50px;
+    display: flex;
+    
+    width: 100%;
+    background-color: #191919;
+
+    align-content: flex-start;
+
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#listprod > div{
+    
+    width: 250px;
+    height: 130px;
+    background-color: #141414;
+    margin:  0 15px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 19px;
+    user-select: none;
+}
+#listprod > div:hover{
+    background-color: #5628EE;
+}
+.addPh3{
+    color: #e84118;
+    font-size: 30px;
+}
+.addPp{
+    color:#ececec;
+    font-size: 15px;
+}
+#list-operaciones{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative;
+    margin: auto;
+}
+#list-operaciones > button{
+    padding: 8px;
+    border-radius: 7px; 
+    border: none;
+    cursor: pointer;
+}
+#a-modificar{
+    color:#141414;
+    background-color:#ececec ;
+}
+#a-eliminar{
+    color :#ececec;
+    background-color: #e84118;
+}
+
+
+.red-sun{z-index: 2;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+    font-size: 15px;
+    padding: 15px;
+    width: 50%;
+    height: 50px;
+    background-color: #e84118;
+    color:#ececec ;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/*login*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+.login-form-tipe1{
+    position: relative;
+    height: 40vh;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+.login-form h2{
+  color:white;
+}
+.form-control {
+  --default-color: currentColor;
+  --invalid-color: #e74c3c;
+  --valid-color: #3498db;
+  --border-bottom-color: currentColor;
+  position: relative;
+  border-bottom: 1px solid var(--border-bottom-color);
+}
+.form-control::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background: var(--valid-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+}
+.form-control:focus-within::after {
+  transform: scaleX(1);
+}
+.form-control input {
+  padding: 8px 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: currentColor;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.form-control input:invalid ~ label {
+  color: var(--invalid-color);
+}
+.form-control input:valid ~ label {
+  color: var(--valid-color);
+}
+.form-control input:placeholder-shown ~ label {
+  color: var(--default-color);
+}
+.form-control input:focus ~ label, .form-control input:not(:placeholder-shown) ~ label {
+  transform: translateY(-120%) scale(0.75);
+}
+.form-control label {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  transition: 0.3s;
+  transform-origin: left;
+}
+
+.btnlogin1 {
+  position: relative;
+  width: 100%;
+  padding: 6px 0;
+  font-size: 16px;
+  color: currentColor;
+  background: transparent;
+  border: 2px solid #3398db;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.btnlogin1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(51, 152, 219, 0.5), transparent);
+  transform: translateX(-100%);
+  transition: 0.6s;
+}
+.btnlogin1:hover {
+  box-shadow: 0 0 20px 10px rgba(51, 152, 219, 0.5);
+}
+.btnlogin1:hover::before {
+  transform: translateX(100%);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
+}
+.login-form h1 {
+  margin: 0 0 24px 0;
+  font-size: 36px;
+}
+.login-form .form-control {
+  margin: 18px 0;
+}
+.login-form .btn {
+  width: 100%;
+  margin: 18px 0 9px 0;
+}
+/*fin loggin*/
+
+
+
+
+/*navegador */
+.nav-tipe1 {
+  width: 100%;
+  top: 0;
+  position: relative;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.header__accent {
+  background: var(--nav1-line);
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  transition: 0.2s cubic-bezier(0.62, 0.14, 0.89, 0.39);
+}
+.nav-tipe1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-tipe1 li {
+  padding: 2em;
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+}
+.nav .longer {
+  flex: 2;
+}
+/*fin de navegador*/
