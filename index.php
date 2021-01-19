@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class = "container">
+    
         <header class ="header">
             <div class="header__logo">
                 Grandez
@@ -17,6 +18,7 @@
                 <a  class ="header__nav__a" href="./views/login.php">Login</a>
             </nav>
         </header>
+
         <div class = "hero">
             <div class = "hero__description">
                 <p class ="hero__description__p">
@@ -26,6 +28,7 @@
                 <a class = "hero__description_calltoaction" href="./contact.php">Contact Me please XD</a>
             </div>
         </div>
+
         <div class="fake-form">
             <input type="text" id="name-product" placeholder="name product">
             <input type="text" id="description" placeholder="description">
@@ -41,6 +44,7 @@
         <div id = "demo__app">
     
         </div>
+
     </div>
     <script type="text/JavaScript" src = "./public/index.js"></script>
 </body>

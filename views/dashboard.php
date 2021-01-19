@@ -1,6 +1,3 @@
-<?php 
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,5 +15,13 @@
             <button type = "submit">create</button> 
         </form>
     </div>
+    <?php
+        include('../controllers/products.php');
+
+        $product = new product();
+        $product->getProducts();
+    
+    ?> 
+
 </body>
 </html>
