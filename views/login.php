@@ -9,7 +9,6 @@
     <title>Login</title>
 </head>
 <body>
-
     <div class = "container">
         <form class ="form-login" action = "../controllers/login.php" method = "POST">
             <div class = "form-login__log-login <?php echo $class ?>">

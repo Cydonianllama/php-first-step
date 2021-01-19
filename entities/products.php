@@ -7,36 +7,36 @@
         private $quantity;
 
         function getNameProduct(){
-            return $this->$nameProduct;
+            return $this->nameProduct;
         }
         function getDescription(){
-            return $this->$description;
+            return $this->description;
         }
         function getCategory(){
-            return $this->$category;
+            return $this->category;
         }
         function getQuantity(){
-            return $this->$quantity;
+            return $this->quantity;
         }
 
         function setNameProduct($nameProduct){
-            $this->$nameProduct = $nameProduct;
+            $this->nameProduct = $nameProduct;
         }
         function setDescription($description){
-            $this->$description = $description;
+            $this->description = $description;
         }
         function setCategory($category){
-            $this->$category = $category;
+            $this->category = $category;
         }
         function setQuantity($quantity){
-            $this->$quantity = $quantity;
+            $this->quantity = $quantity;
         }
 
         function __contruct($nameProduct,$description,$category,$quantity){
-            $this->$nameProduct = $nameProduct;
-            $this->$description = $description;
-            $this->$category = $description;
-            $this->$quantity = $quantity;
+            $this->nameProduct = $nameProduct;
+            $this->description = $description;
+            $this->category = $description;
+            $this->quantity = $quantity;
         }
     }
 ?>

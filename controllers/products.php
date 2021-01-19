@@ -8,16 +8,37 @@ class product extends connection{
         //parent::__construct();
     }
 
-    function getProductById($currentId){
+    function getAllProducts(){
+        $query = $this->getConnection()->prepare("select name_product , description_procuct , nameCategory ,quantity  from products inner join productCategory p where p.idCategory = products.idCategory;");
+        $query->execute();
+        while($row = $query->fetch()){
+            echo 
+            "
+                <tr class = 'table__body__row'>
+                    <td>".$row["name_product"]."</td>
+                    <td>".$row["description_procuct"]."</td>
+                    <td>".$row["nameCategory"]."</td>
+                    <td>".$row["quantity"]."</td>
+                    <td><input type='radio' selected></td>
+                </tr>
+            ";
+        }
+    }
+
+    function filterByCategory(){
+
+    }
+
+    function createProduct(){
+
+    }
+
+    function deleteProduct(){
+
+    }
+
+    function updateProduct(){
 
     }
     
-    // get all products
-    function getProducts(){
-        $query = $this->getConnection()->prepare("select * from products");
-        $query->execute();
-        while ($row = $query->fetch()) {
-            echo $row['name_'].": ".$row['description']."<br />";
-        }
-    }
 }
