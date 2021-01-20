@@ -14,11 +14,32 @@ p,h1,input,textarea,h2,label,legend,a,button,option,select,table{
 }
 
 .header{
+    padding-left: 20px;
+    padding-right: 20px;
     height: 10vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+}
+.header__nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    height: 10vh;
+}
+.header__nav__a:hover{
+    color : red;
+}
+.header__nav__a{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color : rgba(255, 0, 0, 0.507);
+    font-size: 1.2rem;
+    font-weight: 500;
+    gap: 8px;
 }
 
 .view-product{
@@ -162,4 +183,17 @@ tr{
     display: inline-flex;
     align-items: center;
     color : rgb(161, 161, 161);
+}
+
+.log-table{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color : rgb(80, 80, 80);
+    height: 1.5rem;
+}
+.advice{
+    background-color: rgba(255, 255, 0, 0.425);
 }

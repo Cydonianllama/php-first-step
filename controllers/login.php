@@ -38,7 +38,7 @@
                     fclose($statesTXT);
 
                     //redirect the location (sucess redirection)
-                    header("Location: http://localhost:8080/phpFirstStep/views/dashboard.php ");
+                    header("Location: http://localhost:8080/phpFirstStep/controllers/controllerDashboard.php ");
                     die();
                     
                 }else{

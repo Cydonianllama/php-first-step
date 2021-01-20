@@ -11,7 +11,7 @@
     <div class = "container">
         <header class = "header">
             <nav class = "header__nav">
-                <a href="../index.php">logout</a>
+                <a class ="header__nav__a" href="../index.php">logout <img src="../public/assets/log-out.svg" alt="icon of logout"></a>
             </nav>
         </header>
 
@@ -21,7 +21,7 @@
                 <fieldset class="container-form">
                     <legend>Product</legend>
 
-                    <form class="form-product" method="post" action="../controllers/createproduct.php">
+                    <form class="form-product" method="post" action="<?php echo $_SERVER["PHP_SELF"]?>">
                 
                         <div>
                             <label class="form-product__label" for="name-product">name product</label>
@@ -31,15 +31,19 @@
                 
                         <div>
                             <label class="form-product__label" for="text-area">description</label>
-                            <textarea class="form-product__textarea" name="text-area" id="" cols="30" rows="5"></textarea>
+                            <textarea class="form-product__textarea" name="description-product" id="" cols="30" rows="5"></textarea>
                         </div>
                 
                         <div>
                             <label class="form-product__label" for="select-category">category</label>
-                            <select class="form-product__select" name="select-category" id="">
+                            <select class="form-product__select" name="nameCategory" id="">
                                 <option value="select">select</option>
-                                <option value="fruta">fruta</option>
+                                <option value="carnes">carnes</option>
+                                <option value="bebidas">bebidas</option>
+                                <option value="dulces">dulces</option>
                                 <option value="verdura">verdura</option>
+                                <option value="fruta">fruta</option>
+                                <option value="tuberculo">tuberculo</option>
                             </select>
                         </div>
                 
@@ -66,17 +70,16 @@
                         </tr>
                     </thead>
                     <tbody class = "table__body">
-                        <?php 
-                            include_once '../controllers/products.php';
-                            $product_ = new product();
-                            
-                            // render all the products with html configuration for better view
-                            $product_->getAllProducts();
-                        ?>
+
+                        <?php $controller->listAllProducts(); ?>
+
                     </tbody>
                 </table>
+                <div class ="log-table">
+                    
+                </div>
                 <div class = "table-options">
-                    <button class ="table-options__delete">
+                    <button id ="btn-delete-product" class ="table-options__delete">
                         <img src="../public/assets/trash-2.svg" alt="icon delete">
                         delete
                     </button>
@@ -89,6 +92,8 @@
             </div>
         </div>
     </div>
+
+    <script src="../public/dashboard.js"></script>
 
 </body>
 </html>

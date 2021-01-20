@@ -3,19 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+p,h1,input,textarea,h2,label,legend,a,button,option,select,table{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 .container{
     width: 100%;
     height: auto;
+    background-color: #f5f5f5;
+}
+.hero{
+    position: relative;
+    height: 40vh;
 }
 .hero__description{
-    background-color: rgba(177, 177, 177, 0.158);
+    position: absolute;
+    top : 50%;
+    transform: translate(0,-50%);
+    background-color:white;
     max-width: 500px;
     height: auto;
-    padding: 5px;
+    padding: 18px;
+    box-shadow: 3px 3px 23px 0px rgba(179,179,179,0.26);
+}
+.hero__description__h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color :rgb(66, 66, 66);
 }
 .hero__description__p{
     font-size: 1rem;
     font-weight: 600;
+    color : rgb(151, 151, 151);
+}
+.hero__description_calltoaction{
+    font-size: 1rem;
+    font-weight: 600;
+    color :rgb(0, 221, 97);
 }
 .header{
     padding: 0 25px ;
@@ -46,9 +70,17 @@
     font-weight: 600;
     width: 80px;
     height: 4.5vh;
-    background-color: rgba(143, 143, 250, 0.253);
+    background-color: rgb(0, 221, 97);
     cursor: pointer;
+    color : white;
 }
 .header__nav__a:hover{
-    background-color: rgba(143, 143, 250, 0.459);
+    background-color: rgba(0, 221, 96, 0.322);
+}
+
+.fake-form{
+    height : 20vh;
+}
+.demo__app{
+    height: 30vh;
 }

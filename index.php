@@ -1,8 +1,11 @@
 <?php  ?>
+
+<!-- https://www.adaweb.es/modelo-vista-controlador-mvc-php/#:~:text=El%20paradigma%20modelo%20vista%20controlador,hacer%20que%20sea%20m%C3%A1s%20legible. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/index.css">
     <title>Crud Products</title>
@@ -21,9 +24,10 @@
 
         <div class = "hero">
             <div class = "hero__description">
+                <h2 class ="hero__description__h2">MY FIRST PHP APP</h2>
                 <p class ="hero__description__p">
                     this is my first step with php, i feel very exited, because i only found offers
-                    with this language :(
+                    with this language :(, prueba de rendereizacion
                 </p>
                 <a class = "hero__description_calltoaction" href="./contact.php">Contact Me please XD</a>
             </div>
